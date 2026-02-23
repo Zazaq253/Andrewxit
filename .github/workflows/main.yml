@@ -17,8 +17,9 @@ jobs:
         with:
           ndk-version: r25b
 
-      - name: Gerar Gradle Wrapper
-        run: gradle wrapper --gradle-version 8.0
+      -       name: Listar arquivos (Debug)
+        run: ls -R
+        
 
       - name: Build APK
         run: bash ./gradlew assembleDebug --stacktrace
